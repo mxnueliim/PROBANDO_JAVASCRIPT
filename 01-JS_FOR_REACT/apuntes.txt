@@ -1,0 +1,79 @@
+function hello() {
+    console.log("hola mundo")
+    return "hola mundo"
+};
+
+hello() // permite reutilizar logica y retornar valor 
+
+console.log(hello()) // devolveria el valor retornado
+
+
+// recibir uno o muchos parametros, se le puede agregar un valor por defecto
+
+function hola(nombre = "nombre2") {
+    return "hola " + nombre
+};
+
+console.log(hola("nombre1"))
+console.log(hola())
+
+// los valores dentro de un objeto son propiedades
+
+const usuario = {
+    nombre: "nombre3",
+    apellido: "apellido1",
+    edad: 30,
+    direccion: {
+        ciudad: "ciudad1",
+        calle: "calle1"
+    },
+    activo: true
+}
+
+const title = document.createElement('h1')
+title.innerText = 'Hola mundo desde JS'
+
+const button = document.createElement('button')
+button.innerText = 'click'
+
+button.addEventListener('click', function() {
+    title.innerText = 'Texto actualizado con JS'
+})
+
+
+document.body.append(title)
+document.body.append(button)
+
+// funciones flecha
+
+function add(x , y) {
+    return x + y
+}
+
+const add2 = () => {
+    return x + y
+}
+
+const showText = () => {
+    return 'Hola Mundo'
+}
+
+const showText2 = () => 'Hola Mundo' // hay un return implicito
+
+const background = 'yellow'
+const color = 'white'
+const autorizado = true;
+
+const button = document.createElement("button");
+button.innerText = "click me";
+button.style = `background: ${autorizado ? background : 'red'}; color: ${color}`
+
+button.addEventListener("click", () => {
+    if (autorizado) {
+        return alert('autorizado')
+    }
+
+    alert('no autorizado')
+});
+
+document.body.append(button);
