@@ -1,0 +1,37 @@
+// tipos de datos
+
+//string
+"Hola Mundo"
+'Hola Mundo'
+
+//number
+123 => INT
+123.1 => Float
+
+//boolean
+true
+false
+
+//array
+["nombre1", "nombre2", "nombre3"] => lista de strings
+
+//object
+{ 
+    "nombre": "nombre1",
+    "puntacion": 32,
+    "horas": 14.2,
+    "estado": true
+} => esto es un solo usuario
+
+
+//camel case
+
+nombreDePersona
+
+//snake case
+
+nombre_de_persona
+
+//pascal case
+
+NombreDePersona
